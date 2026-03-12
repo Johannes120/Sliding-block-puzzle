@@ -7,17 +7,19 @@
 </head>
 <body>
 
-    <div class="game-container">
-        <h1>Sliding Puzzle</h1>
+    <div class="project-card">
+        <div class="game-container">
+            <h1>Sliding Puzzle</h1>
 
-        <div class="stats">
-            <div>⏱ Time: <span id="timer">00:00</span></div>
-            <div>🎯 Moves: <span id="moves">0</span></div>
+            <div class="stats">
+                <div>⏱ Time: <span id="timer">00:00</span></div>
+                <div>🎯 Moves: <span id="moves">0</span></div>
+            </div>
+
+            <div id="puzzle" class="puzzle"></div>
+
+            <button id="shuffleBtn" class="shuffle-btn">Shuffle</button>
         </div>
-
-        <div id="puzzle" class="puzzle"></div>
-
-        <button id="shuffleBtn" class="shuffle-btn">Shuffle</button>
     </div>
 
     <script src="script.js"></script>
