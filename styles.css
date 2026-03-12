@@ -16,8 +16,8 @@ body {
 /* PROJECT CARD */
 
 .project-card {
-    height:50px;
-    width: 320px;
+    height:580px;
+    width: 380px;
     padding: 20px;
     border-radius: 14px;
     background: linear-gradient(
@@ -25,10 +25,10 @@ body {
         rgba(255, 255, 255, 0.04),
         rgba(255, 255, 255, 0.02)
     ),
-    #edeeef; /* darker blue base */
+    #fbfbfb /* light grey base */
 
     color: white;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    box-shadow: -3px 1px 20px 6px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-card:hover {
@@ -104,4 +104,5 @@ h1 {
     background-color: #4aa8f0;
 
 }
+
 
