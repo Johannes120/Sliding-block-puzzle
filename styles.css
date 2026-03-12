@@ -13,6 +13,28 @@ body {
     height: 100vh;
 }
 
+/* PROJECT CARD */
+
+.project-card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 14px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.02)
+    ),
+    #3a8edb; /* darker blue base */
+
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
 .game-container {
     text-align: center;
 }
@@ -79,4 +101,5 @@ h1 {
 
 .shuffle-btn:hover {
     background-color: #4aa8f0;
+
 }
