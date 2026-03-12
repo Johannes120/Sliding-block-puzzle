@@ -1,3 +1,7 @@
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,76 +9,124 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ============================= */
+/* BODY */
+/* ============================= */
+
 body {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/* ============================= */
 /* PROJECT CARD */
+/* ============================= */
 
 .project-card {
-    height:580px;
-    width: 380px;
-    padding: 20px;
-    border-radius: 14px;
+
+    width: 90%;
+    max-width: 420px;
+    height: auto;
+
+    padding: 25px;
+    border-radius: 16px;
+
     background: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0.04),
-        rgba(255, 255, 255, 0.02)
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.02)
     ),
-    #fbfbfb /* light grey base */
+    #3a8edb;
 
     color: white;
-    box-shadow: -3px 1px 20px 6px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+
+/* ============================= */
+/* TITLE & DESCRIPTION */
+/* ============================= */
+
+.project-title {
+    font-size: 24px;
 }
+
+.project-description {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ============================= */
+/* GAME CONTAINER */
+/* ============================= */
 
 .game-container {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 15px;
-    font-weight: 600;
-    color: #333;
-}
+/* ============================= */
+/* STATS */
+/* ============================= */
 
 .stats {
     display: flex;
     justify-content: space-between;
-    width: 300px;
-    margin: 0 auto 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 500;
-    color: #444;
 }
 
+/* ============================= */
+/* PUZZLE GRID */
+/* ============================= */
+
 .puzzle {
+
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+
+    width: 100%;
+    max-width: 300px;
+
     margin: 20px auto;
 }
 
+/* ============================= */
+/* PUZZLE TILES */
+/* ============================= */
+
 .tile {
+
+    aspect-ratio: 1/1;
+
     background-color: #6ec1ff;
     color: white;
-    font-size: 28px;
+
+    font-size: 24px;
     font-weight: bold;
+
     border-radius: 12px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     cursor: pointer;
+
     transition: all 0.2s ease;
+
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -88,21 +140,109 @@ h1 {
     cursor: default;
 }
 
+/* ============================= */
+/* SHUFFLE BUTTON */
+/* ============================= */
+
 .shuffle-btn {
-    margin-top: 15px;
+
+    margin-top: 10px;
+
     padding: 10px 20px;
+
     border: none;
     border-radius: 8px;
+
     background-color: #6ec1ff;
     color: white;
+
     font-size: 16px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .shuffle-btn:hover {
     background-color: #4aa8f0;
+}
+
+/* ============================= */
+/* PROJECT BUTTONS */
+/* ============================= */
+
+.project-buttons {
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+    font-size: 14px;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.live-demo {
+    background-color: #1e6fd9;
+}
+
+.github {
+    background-color: #222;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .stats {
+        font-size: 16px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 
 }
 
+/* ============================= */
+/* DESKTOP IMPROVEMENTS */
+/* ============================= */
 
+@media (min-width: 768px) {
+
+    .project-card {
+        max-width: 450px;
+    }
+
+    .tile {
+        font-size: 28px;
+    }
+
+}
