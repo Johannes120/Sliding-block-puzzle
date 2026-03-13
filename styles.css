@@ -21,49 +21,8 @@ body {
     min-height: 100vh;
 }
 
-/* ============================= */
-/* PROJECT CARD */
-/* ============================= */
 
-.project-card {
 
-    width: 90%;
-    max-width: 420px;
-    height: auto;
-
-    padding: 25px;
-    border-radius: 16px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(255,255,255,0.04),
-        rgba(255,255,255,0.02)
-    ),
-    #3a8edb;
-
-    color: white;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* ============================= */
-/* TITLE & DESCRIPTION */
-/* ============================= */
-
-.project-title {
-    font-size: 24px;
-}
-
-.project-description {
-    font-size: 14px;
-    opacity: 0.9;
-}
 
 /* ============================= */
 /* GAME CONTAINER */
@@ -246,3 +205,4 @@ body {
     }
 
 }
+
