@@ -126,44 +126,6 @@ body {
     background-color: #4aa8f0;
 }
 
-/* ============================= */
-/* PROJECT BUTTONS */
-/* ============================= */
-
-.project-buttons {
-
-    margin-top: 10px;
-
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.btn {
-
-    padding: 8px 16px;
-
-    border-radius: 20px;
-
-    text-decoration: none;
-    font-size: 14px;
-
-    color: white;
-
-    transition: 0.3s;
-}
-
-.live-demo {
-    background-color: #1e6fd9;
-}
-
-.github {
-    background-color: #222;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
 
 /* ============================= */
 /* MOBILE RESPONSIVE */
@@ -179,11 +141,6 @@ body {
         font-size: 16px;
     }
 
-    .project-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .btn {
         width: 100%;
     }
@@ -194,7 +151,8 @@ body {
 /* DESKTOP IMPROVEMENTS */
 /* ============================= */
 
-@media (min-width: 768px) {
+@media (min-width: 768px)
+{
 
     .project-card {
         max-width: 450px;
@@ -202,7 +160,8 @@ body {
 
     .tile {
         font-size: 28px;
+
     }
+}   
 
-}
-
+    
