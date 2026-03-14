@@ -1,167 +1,277 @@
-/* ============================= */
+/* ================================= */
 /* GLOBAL RESET */
-/* ============================= */
+/* ================================= */
 
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ============================= */
+
+/* ================================= */
 /* BODY */
-/* ============================= */
+/* ================================= */
 
-body {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body{
+
+    background: radial-gradient(circle at top,#1b2735,#090a0f);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    color:#ffffff;
 }
 
 
-
-
-/* ============================= */
+/* ================================= */
 /* GAME CONTAINER */
-/* ============================= */
+/* ================================= */
 
-.game-container {
-    text-align: center;
+.game-container{
+
+    text-align:center;
+
+    padding:30px;
+
+    width:90%;
+    max-width:420px;
+
+    background:rgba(255,255,255,0.05);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
 }
 
-/* ============================= */
-/* STATS */
-/* ============================= */
 
-.stats {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    font-size: 18px;
-    font-weight: 500;
+/* ================================= */
+/* TITLE */
+/* ================================= */
+
+h1{
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    font-size:28px;
 }
 
-/* ============================= */
+
+/* ================================= */
+/* STATS PANEL */
+/* ================================= */
+
+.stats{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:0 auto;
+
+    max-width:300px;
+
+    font-size:16px;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+
+/* ================================= */
 /* PUZZLE GRID */
-/* ============================= */
+/* ================================= */
 
-.puzzle {
+.puzzle{
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    display:grid;
 
-    width: 100%;
-    max-width: 300px;
+    grid-template-columns:repeat(3,1fr);
 
-    margin: 20px auto;
+    gap:12px;
+
+    margin:25px auto;
+
+    width:100%;
+    max-width:300px;
 }
 
-/* ============================= */
+
+/* ================================= */
 /* PUZZLE TILES */
-/* ============================= */
+/* ================================= */
 
-.tile {
+.tile{
 
-    aspect-ratio: 1/1;
+    aspect-ratio:1/1;
 
-    background-color: #6ec1ff;
-    color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    font-size: 24px;
-    font-weight: bold;
+    font-size:24px;
+    font-weight:bold;
 
-    border-radius: 12px;
+    color:#ffffff;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius:12px;
 
-    cursor: pointer;
+    background:linear-gradient(145deg,#4aa8f0,#2f80ed);
 
-    transition: all 0.2s ease;
+    cursor:pointer;
 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition:all 0.25s ease;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.4),
+        inset 0 1px 2px rgba(255,255,255,0.3);
 }
 
-.tile:hover {
-    transform: scale(1.05);
+
+/* TILE HOVER */
+
+.tile:hover{
+
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 10px 25px rgba(74,168,240,0.6);
 }
 
-.empty {
-    background-color: transparent;
-    box-shadow: none;
-    cursor: default;
+
+/* EMPTY TILE */
+
+.empty{
+
+    background:transparent;
+
+    box-shadow:none;
+
+    cursor:default;
 }
 
-/* ============================= */
+
+/* ================================= */
 /* SHUFFLE BUTTON */
-/* ============================= */
+/* ================================= */
 
-.shuffle-btn {
+.shuffle-btn{
 
-    margin-top: 10px;
+    margin-top:10px;
 
-    padding: 10px 20px;
+    padding:12px 28px;
 
-    border: none;
-    border-radius: 8px;
+    border:none;
 
-    background-color: #6ec1ff;
-    color: white;
+    border-radius:30px;
 
-    font-size: 16px;
+    font-size:15px;
 
-    cursor: pointer;
+    color:#ffffff;
 
-    transition: 0.3s;
+    background:linear-gradient(135deg,#4aa8f0,#2f80ed);
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.4);
 }
 
-.shuffle-btn:hover {
-    background-color: #4aa8f0;
+
+/* BUTTON HOVER */
+
+.shuffle-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(74,168,240,0.6);
 }
 
 
-/* ============================= */
+/* ================================= */
 /* MOBILE RESPONSIVE */
-/* ============================= */
+/* ================================= */
 
-@media (max-width: 480px) {
+@media (max-width:480px){
 
-    .project-title {
-        font-size: 20px;
+    .game-container{
+
+        padding:20px;
+
     }
 
-    .stats {
-        font-size: 16px;
+    h1{
+
+        font-size:22px;
+
     }
 
-    .btn {
-        width: 100%;
+    .stats{
+
+        font-size:14px;
+
+        max-width:260px;
+    }
+
+    .puzzle{
+
+        max-width:260px;
+
+        gap:8px;
+    }
+
+    .tile{
+
+        font-size:20px;
+    }
+
+    .shuffle-btn{
+
+        width:100%;
     }
 
 }
 
-/* ============================= */
-/* DESKTOP IMPROVEMENTS */
-/* ============================= */
 
-@media (min-width: 768px)
-{
+/* ================================= */
+/* TABLET / DESKTOP IMPROVEMENTS */
+/* ================================= */
 
-    .project-card {
-        max-width: 450px;
+@media (min-width:768px){
+
+    .game-container{
+
+        max-width:450px;
     }
 
-    .tile {
-        font-size: 28px;
+    h1{
 
+        font-size:30px;
     }
-}   
 
-    
+    .tile{
+
+        font-size:28px;
+    }
+
+}
