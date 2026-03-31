@@ -28,7 +28,7 @@ Smooth Animations: CSS transitions paired with JS logic for a premium "feel."
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/puzzle-project.git
+git clone https://github.com/Johannes120/puzzle-project.git
 Open index.html in your favorite browser.
 
 Click the Shuffle button to start a new game!
