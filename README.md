@@ -15,4 +15,4 @@ A 3x3 sliding block puzzle game built using HTML, CSS, and JavaScript.
 - JavaScript (Vanilla)
 
 ## Live Demo
-https://github.com/Johannes120/Sliding-block-puzzle
+https://johannes120.github.io/Sliding-block-puzzle/
